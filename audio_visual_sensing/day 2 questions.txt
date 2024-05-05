@@ -1,0 +1,16 @@
+This email is BCC to all SRSD students.
+
+Here are my general comments for day 3 quiz.
+
+Q1.
+A. no spatial layout
+BoW model is fundamentally a histogram-style model, as it provides statistics of 'words', which are clustered/summarized from raw image features. All histogram-style model lacks the spatial layout information.
+
+D. occlusion
+SIFT is fairly good to be illumation invariant (it calculates gradient), rotation invariant (it performs orientation calibration), scale invariant (it applies image pyramid to determine keypoint locations).
+It cannot handle occlusion if object is occluded.
+
+Q2. Generally okay, Just follow steps in slide 15 in day2. Please be careful to only use True Return to calculate the average precision. It is modified from an actual exam question set in previous semester.
+
+Q3. Generally okay.
+Open discussion: The whole image (as shown in the quiz) contains lots of non-relevant objects, building, sky, etc. Do you want to apply segmentation on the whole image directly? or do you want to have a two-stage approach to 'detect' solar panel first then apply segmentation on the detected solar panel region?
